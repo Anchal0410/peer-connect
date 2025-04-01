@@ -8,16 +8,18 @@ const { validationResult } = require('express-validator');
 const generateToken = (userId) => {
   return jwt.sign(
     { id: userId },
-    process.env.JWT_SECRET || 'your_jwt_secret',
+    process.env.JWT_SECRET || 'your_jwt_secret', 
     { expiresIn: '30d' }
   );
 };
+
 
 /**
  * @desc    Register new user
  * @route   POST /api/auth/register
  * @access  Public
- */
+ */ 
+
 exports.register = async (req, res) => {
   try {
     // Validate request

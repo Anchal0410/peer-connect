@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <Link to="/" className="text-lg font-bold text-primary-600">
-              CampusConnect
+              PeerConnect
             </Link>
             <p className="text-sm text-gray-500 mt-1">
               Connect with campus friends for activities
@@ -61,8 +61,7 @@ const Footer = () => {
 
         <div className="mt-8 border-t border-gray-200 pt-6">
           <p className="text-center text-xs text-gray-500">
-            &copy; {new Date().getFullYear()} CampusConnect. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} PeerConnect. All rights reserved.
           </p>
         </div>
       </div>

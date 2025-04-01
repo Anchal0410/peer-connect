@@ -21,51 +21,6 @@ const HomePage = () => {
         <div className="animate-pulse absolute top-40 right-1/4 w-80 h-80 rounded-full bg-indigo-200 opacity-10 blur-3xl"></div>
       </div>
 
-      <header className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-6">
-          <div className="flex items-center">
-            <div className="text-white font-bold text-2xl flex items-center">
-              <span className="flex items-center justify-center w-10 h-10 bg-white text-blue-600 rounded-full mr-2 text-lg">
-                C
-              </span>
-              <span
-                className="opacity-0 animate-fade-in-right"
-                style={{
-                  animationDelay: "300ms",
-                  animationFillMode: "forwards",
-                }}
-              >
-                ampusConnect
-              </span>
-            </div>
-          </div>
-
-          <nav className="flex space-x-8">
-            <Link
-              to="/"
-              className="text-blue-100 hover:text-blue-700 transition-colors border-1 rounded-md px-2 py-1.5 border-grey-800 hover:bg-white "
-            >
-              Home
-            </Link>
-            {currentUser ? (
-              <Link
-                to="/dashboard"
-                className="text-blue-100 hover:text-white transition-colors "
-              >
-                Dashboard
-              </Link>
-            ) : (
-              <Link
-                to="/auth"
-                className="text-blue-100 hover:text-blue-700 transition-colors border-1 rounded-md px-2 py-1.5 border-grey-800 hover:bg-white"
-              >
-                Log In
-              </Link>
-            )}
-          </nav>
-        </div>
-      </header>
-
       <main className="relative">
         {/* Hero section */}
         <div className="relative max-w-7xl mx-auto px-4 pt-20 pb-32 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
@@ -77,7 +32,7 @@ const HomePage = () => {
             }`}
           >
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
-              <span className="block">Campus</span>
+              <span className="block">Peer</span>
               <span className="block text-blue-200">Connect</span>
             </h1>
             <p className="text-xl text-blue-100 max-w-lg mb-8">
@@ -86,14 +41,7 @@ const HomePage = () => {
               expand your social circle.
             </p>
             <div className="flex flex-wrap gap-4">
-              {currentUser ? (
-                <Link
-                  to="/dashboard"
-                  className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
-                >
-                  Go to Dashboard
-                </Link>
-              ) : (
+              {currentUser && (
                 <>
                   <Link
                     to="/auth"
@@ -434,9 +382,9 @@ const HomePage = () => {
             <div>
               <div className="text-2xl font-bold mb-4 flex items-center">
                 <span className="flex items-center justify-center w-8 h-8 bg-white text-blue-600 rounded-full mr-2 text-sm">
-                  C
+                  P
                 </span>
-                CampusConnect
+                PeerConnect
               </div>
               <p className="text-gray-400">
                 Connecting students across campus for better social experiences.
@@ -534,7 +482,7 @@ const HomePage = () => {
           </div>
           <div className="mt-8 pt-8 border-t border-gray-800 text-center">
             <p className="text-gray-400 text-sm">
-              &copy; {new Date().getFullYear()} CampusConnect. All rights
+              &copy; {new Date().getFullYear()} PeerConnect. All rights
               reserved.
             </p>
           </div>

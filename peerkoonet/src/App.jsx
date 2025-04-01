@@ -64,7 +64,7 @@ function App() {
           />
 
           <Route
-            path="/activity"
+            path="/activities"
             element={
               // <ProtectedRoute>
               <ActivityPage />

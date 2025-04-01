@@ -19,7 +19,7 @@ const Navbar = () => {
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
               <Link to="/" className="text-2xl font-bold text-primary-600">
-                CampusConnect
+                PeerConnect
               </Link>
             </div>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
@@ -56,14 +56,14 @@ const Navbar = () => {
           <div className="hidden sm:ml-6 sm:flex sm:items-center">
             {currentUser ? (
               <div className="flex items-center space-x-4">
-                <Link to="/profile" className="flex items-center">
+                {/* <Link to="/profile" className="flex items-center">
                   <div className="w-8 h-8 rounded-full bg-primary-500 flex items-center justify-center text-white">
                     {currentUser.name?.charAt(0).toUpperCase() || "U"}
                   </div>
                   <span className="ml-2 text-sm font-medium text-gray-700">
                     {currentUser.name || "User"}
                   </span>
-                </Link>
+                </Link> */}
                 <button
                   onClick={handleLogout}
                   className="px-3 py-1.5 border border-transparent text-sm font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700"

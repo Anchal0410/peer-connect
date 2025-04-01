@@ -52,7 +52,7 @@ const DashboardPage = () => {
         setOnlineUsers(onlineUsersResponse.data);
       } catch (err) {
         console.error("Error fetching dashboard data:", err);
-        setError("Failed to load dashboard data. Please try again later.");
+        // setError("Failed to load dashboard data. Please try again later.");
       } finally {
         setIsLoading(false);
       }
@@ -168,6 +168,12 @@ const DashboardPage = () => {
                 className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-blue-600 bg-white hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all"
               >
                 Browse All Activities
+              </Link>
+              <Link
+                to="/auth"
+                className="ml-10 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-black bg-white hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition-all"
+              >
+                Logout
               </Link>
             </div>
           </div>

@@ -13,8 +13,8 @@ const MOCK_CONVERSATIONS = [
   {
     _id: "conv1",
     participants: [
-      { _id: "user123", name: "Alex Johnson" },
-      { _id: "user456", name: "Anchal Jain" },
+      { _id: "user123", name: "Anjali" },
+      { _id: "user456", name: "Anjali" },
     ],
     lastMessage: "Are you joining the study group tonight?",
     updatedAt: "2025-03-30T15:30:00.000Z",
@@ -65,7 +65,7 @@ const MOCK_CONVERSATIONS = [
 const MOCK_USERS = {
   user456: {
     _id: "user456",
-    name: "Anchal Jain",
+    name: "Anjali",
     avatar: "https://i.pravatar.cc/150?img=1",
     college: "Stanford University",
     isOnline: true,
@@ -106,7 +106,7 @@ const MOCK_MESSAGES = {
       _id: "msg1",
       conversationId: "conv1",
       sender: "user456",
-      content: "Hey Alex! How's your project coming along?",
+      content: "Hey Anchal! How's your project coming along?",
       createdAt: "2025-03-30T14:30:00.000Z",
     },
     {
@@ -114,7 +114,7 @@ const MOCK_MESSAGES = {
       conversationId: "conv1",
       sender: "user123",
       content:
-        "Hi Sarah! It's going well. Just need to finish the presentation slides. How about yours?",
+        "Hi Anjali! It's going well. Just need to finish the presentation slides. How about yours?",
       createdAt: "2025-03-30T14:35:00.000Z",
     },
     {
@@ -132,7 +132,7 @@ const MOCK_MESSAGES = {
       conversationId: "conv2",
       sender: "user123",
       content:
-        "Hey Michael, I found these notes from last semester that might help with your research",
+        "Hey Akhil, I found these notes from last semester that might help with your research",
       createdAt: "2025-03-29T11:15:00.000Z",
     },
     {
@@ -157,7 +157,7 @@ const MOCK_MESSAGES = {
       _id: "msg7",
       conversationId: "conv3",
       sender: "user321",
-      content: "Hi Alex, just checking in about the group assignment",
+      content: "Hi Anchal, just checking in about the group assignment",
       createdAt: "2025-03-28T18:30:00.000Z",
     },
     {
@@ -165,7 +165,7 @@ const MOCK_MESSAGES = {
       conversationId: "conv3",
       sender: "user123",
       content:
-        "Hey Emily! I'm working on my part now. Should be done by tonight",
+        "Hey Bhuvesh! I'm working on my part now. Should be done by tonight",
       createdAt: "2025-03-28T18:40:00.000Z",
     },
     {
@@ -181,7 +181,7 @@ const MOCK_MESSAGES = {
       _id: "msg10",
       conversationId: "conv4",
       sender: "user654",
-      content: "Alex, are you free tomorrow for a study session?",
+      content: "Anchal, are you free tomorrow for a study session?",
       createdAt: "2025-03-28T10:10:00.000Z",
     },
     {
@@ -204,7 +204,7 @@ const MOCK_MESSAGES = {
       _id: "msg13",
       conversationId: "conv5",
       sender: "user987",
-      content: "Hey Alex! How are your classes going this semester?",
+      content: "Hey Anchal  ! How are your classes going this semester?",
       createdAt: "2025-03-27T14:30:00.000Z",
     },
     {
